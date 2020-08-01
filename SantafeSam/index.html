@@ -55,8 +55,21 @@
       loop="true" 
       src="assets/Ruins_and_pictographs.mp4"> 
     </video>
-  
-    <!-- Plaze image target produces a 360 video of a corner of the plaza. User presses anywhere on thumbnail to play the video-->
+ 
+    <!-- potshard image target produces a video of potshard pictures. User presses anywhere on thumbnail to play the video-->
+    <img id="Potshard" src="assets/Potshard.jpg">
+    <img id="Potshard_thumb" src="assets/Potshard_thumb.jpg">
+      <video
+        id="Potshards-video"
+        autoplay
+        muted
+        crossorigin="anonymous"
+        loop="true"
+        src="assets/Potshards.mp4">
+     </video>
+
+
+    <!-- Plaza image target produces a 360 video of a corner of the plaza. User presses anywhere on thumbnail to play the video-->
     <img id="plaza" src="assets/plaza.jpg">
    <!-- <img id="need_thumbnail" src="assets/need_thumbnail.jpg">-->
     <video
@@ -93,8 +106,15 @@
     xrextras-play-video="video: #Ruins_and_pictographs-video; thumb: #Pictograph; canstop: true"
     geometry="primitive: plane; height: 2; width: 3;">
    </a-entity>
-
-    <!-- Plaza target yields plaza 360 video-->
+  
+   <!-- potshard target yields Potshard video - flat-->
+  <a-entity
+    xrextras-named-image-target="name: Potshard"
+    xrextras-play-video="video: #Potshards-video; thumb: #Potshard_thumb; canstop: true"
+    geometry="primitive: plane; height: 1; width: .79;">
+  </a-entity>
+ 
+  <!-- Plaza target yields plaza 360 video-->
    <a-entity
    xrextras-named-image-target="name: plaza"
    xrextras-play-video="video: #plaza-video; canstop: true"
