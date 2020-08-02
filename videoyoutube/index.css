@@ -1,0 +1,14 @@
+div.myvideo {
+  z-index: 10;
+  position: absolute;    
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  vertical-align: middle;
+  user-select: none;
+}
